@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- ================================================
+       META E CONFIGURAÇÕES BÁSICAS
+       ================================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio de Eliane Alves Leandro — Designer de Embalagem e UX Research" />
+  <title>Eliane Leandro · Designer</title>
+
+  <!-- Fonte do Google Fonts via @import no CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Folha de estilos principal -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="light-mode">
+
+  <!-- ================================================
+       BOTÃO: VOLTAR AO TOPO
+       Aparece quando o usuário rola a página para baixo
+       ================================================ -->
+  <button id="btn-topo" aria-label="Voltar ao topo" title="Voltar ao topo">&#8679;</button>
+
+  <!-- ================================================
+       CABEÇALHO / NAVEGAÇÃO
+       ================================================ -->
+  <header id="cabecalho">
+    <nav class="nav-container" role="navigation" aria-label="Navegação principal">
+
+      <!-- Logo / nome da designer -->
+      <a href="#hero" class="nav-logo" aria-label="Ir para o início">
+        <span class="logo-e">E</span>liane<span class="logo-ponto">.</span>
+      </a>
+
+      <!-- Links de navegação (desktop) -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#sobre" class="nav-link">Sobre</a></li>
+        <li><a href="#habilidades" class="nav-link">Habilidades</a></li>
+        <li><a href="#projetos" class="nav-link">Projetos</a></li>
+        <li><a href="#interesses" class="nav-link">Interesses</a></li>
+        <li><a href="#contato" class="nav-link">Contato</a></li>
+      </ul>
+
+      <!-- Controles do lado direito -->
+      <div class="nav-controles">
+        <!-- Botão de tema claro / escuro -->
+        <button id="btn-tema" aria-label="Alternar tema claro/escuro" title="Alternar tema">
+          <span class="icone-tema">&#9788;</span>
+        </button>
+
+        <!-- Botão hambúrguer para mobile -->
+        <button
+          id="btn-menu"
+          class="btn-hamburger"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </nav>
+  </header>
+
+  <!-- ================================================
+       SEÇÃO HERO — APRESENTAÇÃO PRINCIPAL
+       ================================================ -->
+  <section id="hero" class="secao-hero" aria-label="Apresentação">
+
+    <!-- Fundo decorativo com formas geométricas -->
+    <div class="hero-bg" aria-hidden="true">
+      <div class="forma forma-1"></div>
+      <div class="forma forma-2"></div>
+      <div class="forma forma-3"></div>
+      <div class="forma forma-4"></div>
+      <!-- Linhas decorativas inspiradas em rótulos de vinho -->
+      <div class="linha-decorativa linha-1"></div>
+      <div class="linha-decorativa linha-2"></div>
+    </div>
+
+    <div class="hero-conteudo fade-in">
+      <!-- Tag de área -->
+      <span class="hero-tag">Designer · Embalagem · UX Research</span>
+
+      <!-- Nome principal em destaque -->
+      <h1 class="hero-nome">
+        Eliane<br />
+        <span class="nome-destaque">Alves Leandro</span>
+      </h1>
+
+      <!-- Subtítulo com texto animado -->
+      <p class="hero-subtitulo">
+        Criatividade que <span class="texto-animado" id="texto-animado"></span>
+      </p>
+
+      <!-- Botões de ação -->
+      <div class="hero-botoes">
+        <a href="#projetos" class="btn btn-primario">Ver Projetos</a>
+        <a href="#contato" class="btn btn-secundario">Fale Comigo</a>
+      </div>
+    </div>
+
+    <!-- Indicador de scroll -->
+    <div class="scroll-indicador" aria-hidden="true">
+      <span class="scroll-texto">role para baixo</span>
+      <div class="scroll-seta"></div>
+    </div>
+
+  </section>
+
+  <!-- ================================================
+       SEÇÃO SOBRE — APRESENTAÇÃO PESSOAL
+       ================================================ -->
+  <section id="sobre" class="secao secao-sobre" aria-labelledby="titulo-sobre">
+    <div class="container">
+
+      <div class="secao-cabecalho slide-up">
+        <span class="secao-numero">01</span>
+        <h2 id="titulo-sobre" class="secao-titulo">Sobre Mim</h2>
+        <div class="linha-titulo" aria-hidden="true"></div>
+      </div>
+
+      <div class="sobre-grid">
+
+        <!-- Cartão visual / avatar decorativo -->
+        <div class="sobre-visual slide-left">
+          <div class="avatar-container">
+            <!-- Monograma decorativo no lugar de foto -->
+            <div class="avatar-monograma" aria-label="Iniciais EA">
+              <span>EA</span>
+            </div>
+            <!-- Elementos decorativos ao redor do avatar -->
+            <div class="avatar-deco deco-1" aria-hidden="true"></div>
+            <div class="avatar-deco deco-2" aria-hidden="true"></div>
+            <div class="avatar-deco deco-3" aria-hidden="true"></div>
+          </div>
+
+          <!-- Estatísticas rápidas -->
+          <div class="sobre-stats">
+            <div class="stat-item">
+              <span class="stat-numero">4+</span>
+              <span class="stat-label">Marcas</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-numero">∞</span>
+              <span class="stat-label">Criatividade</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-numero">100%</span>
+              <span class="stat-label">Dedicação</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Texto de apresentação -->
+        <div class="sobre-texto slide-right">
+          <p class="sobre-intro">
+            Olá! Sou <strong>Eliane Alves Leandro</strong>, designer apaixonada por transformar
+            ideias em experiências visuais memoráveis.
+          </p>
+          <p>
+            Minha trajetória une <strong>Design de Embalagem</strong> e <strong>UX Research</strong>,
+            com foco em criar identidades que conectam marcas e pessoas de forma autêntica e impactante.
+            Acredito que cada embalagem conta uma história — e eu adoro ser a autora dessas histórias.
+          </p>
+          <p>
+            Trabalhei com marcas como <strong>Qualitá</strong>, <strong>Taeq</strong>,
+            <strong>Club des Sommeliers</strong> e <strong>Ever</strong>, desenvolvendo projetos
+            que equilibram estética, funcionalidade e identidade de marca.
+          </p>
+
+          <!-- Tags de palavras-chave -->
+          <div class="sobre-tags" aria-label="Palavras-chave">
+            <span class="tag">Criativa</span>
+            <span class="tag">Inovadora</span>
+            <span class="tag">Detalhista</span>
+            <span class="tag">Apaixonada por marcas</span>
+            <span class="tag">Pensamento visual</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       SEÇÃO HABILIDADES
+       ================================================ -->
+  <section id="habilidades" class="secao secao-habilidades" aria-labelledby="titulo-habilidades">
+    <div class="container">
+
+      <div class="secao-cabecalho slide-up">
+        <span class="secao-numero">02</span>
+        <h2 id="titulo-habilidades" class="secao-titulo">Habilidades</h2>
+        <div class="linha-titulo" aria-hidden="true"></div>
+      </div>
+
+      <!-- Grade de cards de habilidades -->
+      <div class="habilidades-grid">
+
+        <!-- Card 1 -->
+        <article class="habilidade-card slide-up" aria-label="Design de Embalagem">
+          <div class="card-icone" aria-hidden="true">&#9671;</div>
+          <h3 class="card-titulo">Design de Embalagem</h3>
+          <p class="card-desc">
+            Criação de embalagens que comunicam a essência da marca, com foco em
+            diferenciação no ponto de venda e experiência do consumidor.
+          </p>
+          <div class="card-barra">
+            <div class="barra-progresso" data-progresso="92" style="width: 0%"></div>
+          </div>
+          <span class="card-porcentagem">92%</span>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="habilidade-card slide-up" aria-label="UX Research">
+          <div class="card-icone" aria-hidden="true">&#9650;</div>
+          <h3 class="card-titulo">UX Research</h3>
+          <p class="card-desc">
+            Pesquisa centrada no usuário para embasar decisões de design com dados
+            reais, entrevistas e testes de usabilidade.
+          </p>
+          <div class="card-barra">
+            <div class="barra-progresso" data-progresso="85" style="width: 0%"></div>
+          </div>
+          <span class="card-porcentagem">85%</span>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="habilidade-card slide-up" aria-label="Branding">
+          <div class="card-icone" aria-hidden="true">&#9670;</div>
+          <h3 class="card-titulo">Branding</h3>
+          <p class="card-desc">
+            Construção de identidades visuais coerentes e marcantes, do conceito
+            à aplicação em materiais físicos e digitais.
+          </p>
+          <div class="card-barra">
+            <div class="barra-progresso" data-progresso="88" style="width: 0%"></div>
+          </div>
+          <span class="card-porcentagem">88%</span>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="habilidade-card slide-up" aria-label="Criatividade e Inovação">
+          <div class="card-icone" aria-hidden="true">&#10022;</div>
+          <h3 class="card-titulo">Criatividade &amp; Inovação</h3>
+          <p class="card-desc">
+            Pensamento criativo aplicado a soluções inesperadas, com olhar
+            experimental e sensibilidade estética apurada.
+          </p>
+          <div class="card-barra">
+            <div class="barra-progresso" data-progresso="98" style="width: 0%"></div>
+          </div>
+          <span class="card-porcentagem">98%</span>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="habilidade-card slide-up" aria-label="Design Gráfico">
+          <div class="card-icone" aria-hidden="true">&#9632;</div>
+          <h3 class="card-titulo">Design Gráfico</h3>
+          <p class="card-desc">
+            Composição visual, tipografia, paletas de cor e hierarquia de informação
+            para peças impressas e digitais.
+          </p>
+          <div class="card-barra">
+            <div class="barra-progresso" data-progresso="90" style="width: 0%"></div>
+          </div>
+          <span class="card-porcentagem">90%</span>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="habilidade-card slide-up" aria-label="Pesquisa de Tendências">
+          <div class="card-icone" aria-hidden="true">&#9670;</div>
+          <h3 class="card-titulo">Pesquisa de Tendências</h3>
+          <p class="card-desc">
+            Análise de mercado, comportamento do consumidor e tendências de design
+            para embasar projetos com visão de futuro.
+          </p>
+          <div class="card-barra">
+            <div class="barra-progresso" data-progresso="87" style="width: 0%"></div>
+          </div>
+          <span class="card-porcentagem">87%</span>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       SEÇÃO PROJETOS — COM FILTRO
+       ================================================ -->
+  <section id="projetos" class="secao secao-projetos" aria-labelledby="titulo-projetos">
+    <div class="container">
+
+      <div class="secao-cabecalho slide-up">
+        <span class="secao-numero">03</span>
+        <h2 id="titulo-projetos" class="secao-titulo">Projetos</h2>
+        <div class="linha-titulo" aria-hidden="true"></div>
+      </div>
+
+      <!-- Botões de filtro -->
+      <div class="filtros" role="group" aria-label="Filtrar projetos por categoria">
+        <button class="filtro-btn ativo" data-filtro="todos">Todos</button>
+        <button class="filtro-btn" data-filtro="embalagem">Embalagem</button>
+        <button class="filtro-btn" data-filtro="branding">Branding</button>
+        <button class="filtro-btn" data-filtro="ux">UX Research</button>
+      </div>
+
+      <!-- Grade de projetos -->
+      <div class="projetos-grid" id="projetos-grid">
+
+        <!-- Projeto 1 — Qualitá -->
+        <article
+          class="projeto-card"
+          data-categoria="embalagem branding"
+          aria-label="Projeto Qualitá"
+        >
+          <div class="projeto-visual projeto-qualita" aria-hidden="true">
+            <div class="projeto-forma pf-1"></div>
+            <div class="projeto-forma pf-2"></div>
+            <span class="projeto-marca-texto">Qualitá</span>
+          </div>
+          <div class="projeto-info">
+            <div class="projeto-tags">
+              <span class="proj-tag">Embalagem</span>
+              <span class="proj-tag">Branding</span>
+            </div>
+            <h3 class="projeto-titulo">Linha Qualitá</h3>
+            <p class="projeto-desc">
+              Redesign da linha de embalagens para produtos alimentícios, com foco
+              em clareza visual, apelo ao consumidor e identidade de marca consistente.
+            </p>
+            <div class="projeto-rodape">
+              <span class="projeto-ano">2024</span>
+              <button class="btn-ver-mais" aria-label="Ver mais sobre Qualitá">
+                Ver mais <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projeto 2 — Taeq -->
+        <article
+          class="projeto-card"
+          data-categoria="embalagem"
+          aria-label="Projeto Taeq"
+        >
+          <div class="projeto-visual projeto-taeq" aria-hidden="true">
+            <div class="projeto-forma pf-1"></div>
+            <div class="projeto-forma pf-2"></div>
+            <span class="projeto-marca-texto">Taeq</span>
+          </div>
+          <div class="projeto-info">
+            <div class="projeto-tags">
+              <span class="proj-tag">Embalagem</span>
+              <span class="proj-tag">Sustentável</span>
+            </div>
+            <h3 class="projeto-titulo">Taeq Natural</h3>
+            <p class="projeto-desc">
+              Desenvolvimento de embalagens para linha de produtos naturais e orgânicos,
+              com linguagem visual que transmite saúde, natureza e modernidade.
+            </p>
+            <div class="projeto-rodape">
+              <span class="projeto-ano">2024</span>
+              <button class="btn-ver-mais" aria-label="Ver mais sobre Taeq">
+                Ver mais <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projeto 3 — Club des Sommeliers -->
+        <article
+          class="projeto-card"
+          data-categoria="embalagem branding"
+          aria-label="Projeto Club des Sommeliers"
+        >
+          <div class="projeto-visual projeto-sommelier" aria-hidden="true">
+            <div class="projeto-forma pf-1"></div>
+            <div class="projeto-forma pf-2"></div>
+            <span class="projeto-marca-texto">Club des<br/>Sommeliers</span>
+          </div>
+          <div class="projeto-info">
+            <div class="projeto-tags">
+              <span class="proj-tag">Embalagem</span>
+              <span class="proj-tag">Premium</span>
+            </div>
+            <h3 class="projeto-titulo">Club des Sommeliers</h3>
+            <p class="projeto-desc">
+              Criação de rótulos para linha de vinhos premium, com estética sofisticada
+              inspirada na cultura europeia e na arte do vinho.
+            </p>
+            <div class="projeto-rodape">
+              <span class="projeto-ano">2023</span>
+              <button class="btn-ver-mais" aria-label="Ver mais sobre Club des Sommeliers">
+                Ver mais <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projeto 4 — Ever -->
+        <article
+          class="projeto-card"
+          data-categoria="branding ux"
+          aria-label="Projeto Ever"
+        >
+          <div class="projeto-visual projeto-ever" aria-hidden="true">
+            <div class="projeto-forma pf-1"></div>
+            <div class="projeto-forma pf-2"></div>
+            <span class="projeto-marca-texto">Ever</span>
+          </div>
+          <div class="projeto-info">
+            <div class="projeto-tags">
+              <span class="proj-tag">Branding</span>
+              <span class="proj-tag">UX Research</span>
+            </div>
+            <h3 class="projeto-titulo">Ever — Identidade Visual</h3>
+            <p class="projeto-desc">
+              Construção de identidade visual completa para a marca Ever, com pesquisa
+              de usuário, definição de tom de voz e sistema visual aplicado.
+            </p>
+            <div class="projeto-rodape">
+              <span class="projeto-ano">2023</span>
+              <button class="btn-ver-mais" aria-label="Ver mais sobre Ever">
+                Ver mais <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projeto 5 — UX Research Cosméticos -->
+        <article
+          class="projeto-card"
+          data-categoria="ux"
+          aria-label="Projeto UX Research Cosméticos"
+        >
+          <div class="projeto-visual projeto-cosmetico" aria-hidden="true">
+            <div class="projeto-forma pf-1"></div>
+            <div class="projeto-forma pf-2"></div>
+            <span class="projeto-marca-texto">Cosmético<br/>Criativo</span>
+          </div>
+          <div class="projeto-info">
+            <div class="projeto-tags">
+              <span class="proj-tag">UX Research</span>
+              <span class="proj-tag">Cosméticos</span>
+            </div>
+            <h3 class="projeto-titulo">UX em Cosméticos</h3>
+            <p class="projeto-desc">
+              Pesquisa de experiência do usuário aplicada ao universo de cosméticos
+              criativos, mapeando jornadas e oportunidades de design.
+            </p>
+            <div class="projeto-rodape">
+              <span class="projeto-ano">2023</span>
+              <button class="btn-ver-mais" aria-label="Ver mais sobre UX em Cosméticos">
+                Ver mais <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Projeto 6 — Branding Alimentos -->
+        <article
+          class="projeto-card"
+          data-categoria="branding embalagem"
+          aria-label="Projeto Branding Alimentos"
+        >
+          <div class="projeto-visual projeto-alimentos" aria-hidden="true">
+            <div class="projeto-forma pf-1"></div>
+            <div class="projeto-forma pf-2"></div>
+            <span class="projeto-marca-texto">Food<br/>Branding</span>
+          </div>
+          <div class="projeto-info">
+            <div class="projeto-tags">
+              <span class="proj-tag">Branding</span>
+              <span class="proj-tag">Alimentos</span>
+            </div>
+            <h3 class="projeto-titulo">Food Branding</h3>
+            <p class="projeto-desc">
+              Projeto de branding para linha de alimentos artesanais, com identidade
+              visual que une tradição, sabor e apelo contemporâneo.
+            </p>
+            <div class="projeto-rodape">
+              <span class="projeto-ano">2022</span>
+              <button class="btn-ver-mais" aria-label="Ver mais sobre Food Branding">
+                Ver mais <span aria-hidden="true">→</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /projetos-grid -->
+    </div>
+  </section>
+
+  <!-- ================================================
+       SEÇÃO INTERESSES PESSOAIS
+       ================================================ -->
+  <section id="interesses" class="secao secao-interesses" aria-labelledby="titulo-interesses">
+    <div class="container">
+
+      <div class="secao-cabecalho slide-up">
+        <span class="secao-numero">04</span>
+        <h2 id="titulo-interesses" class="secao-titulo">Interesses</h2>
+        <div class="linha-titulo" aria-hidden="true"></div>
+      </div>
+
+      <!-- Grade de interesses com ícones decorativos -->
+      <div class="interesses-grid">
+
+        <div class="interesse-item slide-up" aria-label="Funko Pop">
+          <div class="interesse-icone" aria-hidden="true">&#9670;</div>
+          <span class="interesse-nome">Funko Pop</span>
+        </div>
+
+        <div class="interesse-item slide-up" aria-label="Cachorros">
+          <div class="interesse-icone" aria-hidden="true">&#10022;</div>
+          <span class="interesse-nome">Cachorros</span>
+        </div>
+
+        <div class="interesse-item slide-up" aria-label="Cosmético Criativo">
+          <div class="interesse-icone" aria-hidden="true">&#9671;</div>
+          <span class="interesse-nome">Cosmético Criativo</span>
+        </div>
+
+        <div class="interesse-item slide-up" aria-label="Design">
+          <div class="interesse-icone" aria-hidden="true">&#9632;</div>
+          <span class="interesse-nome">Design</span>
+        </div>
+
+        <div class="interesse-item slide-up" aria-label="Espanha">
+          <div class="interesse-icone" aria-hidden="true">&#9650;</div>
+          <span class="interesse-nome">Espanha</span>
+        </div>
+
+        <div class="interesse-item slide-up" aria-label="Gastronomia">
+          <div class="interesse-icone" aria-hidden="true">&#9670;</div>
+          <span class="interesse-nome">Gastronomia</span>
+        </div>
+
+        <div class="interesse-item slide-up" aria-label="Arte">
+          <div class="interesse-icone" aria-hidden="true">&#10022;</div>
+          <span class="interesse-nome">Arte</span>
+        </div>
+
+        <div class="interesse-item slide-up" aria-label="UX Research">
+          <div class="interesse-icone" aria-hidden="true">&#9671;</div>
+          <span class="interesse-nome">UX Research</span>
+        </div>
+
+      </div>
+
+      <!-- Frase inspiracional -->
+      <blockquote class="frase-inspiracional slide-up">
+        <p>
+          "Design não é apenas o que parece e como se sente. Design é como funciona."
+        </p>
+        <cite>— Steve Jobs</cite>
+      </blockquote>
+
+    </div>
+  </section>
+
+  <!-- ================================================
+       SEÇÃO CONTATO
+       ================================================ -->
+  <section id="contato" class="secao secao-contato" aria-labelledby="titulo-contato">
+    <div class="container">
+
+      <div class="secao-cabecalho slide-up">
+        <span class="secao-numero">05</span>
+        <h2 id="titulo-contato" class="secao-titulo">Contato</h2>
+        <div class="linha-titulo" aria-hidden="true"></div>
+      </div>
+
+      <div class="contato-grid">
+
+        <!-- Informações de contato -->
+        <div class="contato-info slide-left">
+          <h3 class="contato-subtitulo">Vamos criar algo incrível juntos?</h3>
+          <p>
+            Estou disponível para projetos de <strong>design de embalagem</strong>,
+            <strong>branding</strong> e <strong>UX Research</strong>.
+            Se você tem uma ideia que precisa ganhar forma visual, me chame!
+          </p>
+
+          <ul class="contato-lista" aria-label="Informações de contato">
+            <li class="contato-item">
+              <span class="contato-icone" aria-hidden="true">&#9993;</span>
+              <a href="mailto:eliane@email.com" class="contato-link">eliane@email.com</a>
+            </li>
+            <li class="contato-item">
+              <span class="contato-icone" aria-hidden="true">&#128241;</span>
+              <a href="tel:+5511999999999" class="contato-link">(11) 99999-9999</a>
+            </li>
+            <li class="contato-item">
+              <span class="contato-icone" aria-hidden="true">&#127758;</span>
+              <span>São Paulo, Brasil</span>
+            </li>
+          </ul>
+
+          <!-- Links de redes sociais -->
+          <div class="redes-sociais" aria-label="Redes sociais">
+            <a href="#" class="rede-link" aria-label="LinkedIn">in</a>
+            <a href="#" class="rede-link" aria-label="Behance">Be</a>
+            <a href="#" class="rede-link" aria-label="Instagram">Ig</a>
+          </div>
+        </div>
+
+        <!-- Formulário de contato -->
+        <form
+          class="contato-form slide-right"
+          id="form-contato"
+          novalidate
+          aria-label="Formulário de contato"
+        >
+          <div class="campo-grupo">
+            <label for="nome" class="campo-label">Nome</label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              class="campo-input"
+              placeholder="Seu nome completo"
+              required
+              autocomplete="name"
+            />
+          </div>
+
+          <div class="campo-grupo">
+            <label for="email" class="campo-label">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="campo-input"
+              placeholder="seu@email.com"
+              required
+              autocomplete="email"
+            />
+          </div>
+
+          <div class="campo-grupo">
+            <label for="assunto" class="campo-label">Assunto</label>
+            <select id="assunto" name="assunto" class="campo-input campo-select">
+              <option value="">Selecione um assunto</option>
+              <option value="embalagem">Design de Embalagem</option>
+              <option value="branding">Branding</option>
+              <option value="ux">UX Research</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
+
+          <div class="campo-grupo">
+            <label for="mensagem" class="campo-label">Mensagem</label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              class="campo-input campo-textarea"
+              placeholder="Conte-me sobre seu projeto..."
+              rows="5"
+              required
+            ></textarea>
+          </div>
+
+          <!-- Feedback de envio -->
+          <div id="form-feedback" class="form-feedback" role="alert" aria-live="polite"></div>
+
+          <button type="submit" class="btn btn-primario btn-form">
+            Enviar Mensagem <span aria-hidden="true">&#10148;</span>
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================
+       RODAPÉ
+       ================================================ -->
+  <footer class="rodape" role="contentinfo">
+    <div class="container">
+      <div class="rodape-conteudo">
+
+        <!-- Logo no rodapé -->
+        <div class="rodape-logo">
+          <span class="logo-e">E</span>liane<span class="logo-ponto">.</span>
+        </div>
+
+        <!-- Frase curta -->
+        <p class="rodape-frase">Design com propósito, criatividade sem limites.</p>
+
+        <!-- Direitos autorais -->
+        <p class="rodape-copy">
+          &copy; <span id="ano-atual"></span> Eliane Alves Leandro · Todos os direitos reservados.
+        </p>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal de projeto (aparece ao clicar em "Ver mais") -->
+  <div id="modal-projeto" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-titulo" hidden>
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal-conteudo">
+      <button class="modal-fechar" id="modal-fechar" aria-label="Fechar modal">&times;</button>
+      <h3 id="modal-titulo" class="modal-titulo"></h3>
+      <p id="modal-texto" class="modal-texto"></p>
+      <div id="modal-tags" class="modal-tags"></div>
+    </div>
+  </div>
+
+  <!-- Script principal -->
+  <script src="script.js"></script>
+</body>
+</html>
